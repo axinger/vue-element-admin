@@ -45,9 +45,16 @@ Object.keys(filters).forEach(key => {
 
 Vue.config.productionTip = false
 
+// 引入pinia
+import { createPinia, PiniaVuePlugin } from 'pinia'
+
+Vue.use(PiniaVuePlugin)
+const pinia = createPinia()
+
 new Vue({
   el: '#app',
   router,
   store,
+  pinia,
   render: h => h(App)
 })
