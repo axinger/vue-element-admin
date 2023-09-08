@@ -17,11 +17,12 @@
 <script>
 
 export default {
-  name: 'TestPage',
+  name: 'TestPage2',
   components: {},
   props: {},
   data() {
     return {
+
       text: null
     }
   },
